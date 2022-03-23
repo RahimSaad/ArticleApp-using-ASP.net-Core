@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewData["Title"] = "Index";
+}
+@model List<ArticlesApp.Models.Article> 
+
+<main id="main">
+        <section>
+
+            <h1>Trending Articles &#128293; </h1>
+
+            <div class="parent-of-articles">
+
+                @foreach(var item in Model)
+                {
+                    <article>
+                        <h2> @item.title </h2>
+                        <p>
+                            @item.body
+                            <a class="btn" href="#">show more</a>
+                        </p>
+                    </article>
+                }
+
+            </div>
+
+        </section>
+
+    </main>
+

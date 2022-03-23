@@ -1,0 +1,29 @@
+﻿@*
+    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
+*@
+@{
+}
+@model ArticlesApp.Models.Article
+<main id="main">
+
+        <section>
+
+            <h1> Create new article </h1>
+
+            <form role="form" asp-controller="Home" asp-action="save">
+                <label for="title">Article title: </label>
+                <input id="title" type="text" asp-for="title">
+
+                <label for="summary">Article summary: </label>
+                <input id="summary" type="text" asp-for="summary">
+
+                <label for="body">Article body:</label>
+                <textarea   id="body" asp-for="body" ></textarea>
+
+                <button class="create">create</button>
+            </form>
+
+        </section>
+        
+    </main>
+
